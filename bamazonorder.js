@@ -162,7 +162,7 @@ var deleteProduct = function() {
             inquirer.prompt({
                 name: 'confirm',
                 type: 'confirm',
-                message: `You would like to delete` + chalk.blue.bold(` '${res[0].product_name}'. `) + `Is this correct?`
+                message: `You would like to delete` + (` '${res[0].product_name}'. `) + `Is this correct?`
             }).then((answer) => {
                 if (answer.confirm) {
                     itemToDelete = {
