@@ -205,7 +205,7 @@ var confirmItem = function(product, object) {
     inquirer.prompt({
         name: 'confirmItem',
         type: 'confirm',
-        message: `You chose` + chalk.blue.bold(` '${product}'. `) + `Is this correct?`
+        message: `You chose` + (` '${product}'. `) + `Is this correct?`
     }).then((answer) => {
         if (answer.confirmItem) {
             itemToUpdate = {
